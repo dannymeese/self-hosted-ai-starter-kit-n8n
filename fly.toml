@@ -1,2 +1,9 @@
+app = "self-hosted-ai-starter-kit-n8n"
+primary_region = "den"
+
 [build]
 image = "n8nio/n8n:latest"
+
+[[mounts]]
+source      = "n8n_data"
+destination = "/home/node/.n8n"
